@@ -25,13 +25,23 @@
 
 // console.log(myFunction());
 
-function myFunction(){
-    let a = 'Farukh'
-    if (a.toLowerCase() === 'admin'){
+// function myFunction(){
+//     let a = 'Farukh'
+//     if (a.toLowerCase() === 'admin'){
+//         return 'Welcome admin'
+//     } else {
+//         return `Welcome ${a}`
+//     }
+// }
+
+// console.log(myFunction());
+
+function myFunction(Farukh){
+    if (Farukh.toLowerCase() === 'admin'){
         return 'Welcome admin'
     } else {
-        return `Welcome ${a}`
+        return `Welcome ${Farukh}`
     }
 }
 
-console.log(myFunction());
+console.log(myFunction('Farukh'));
