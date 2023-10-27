@@ -45,3 +45,4 @@ function myFunction(name){
 }
 
 console.log(myFunction('Farukh'));
+console.log(myFunction('Shabdan'));
