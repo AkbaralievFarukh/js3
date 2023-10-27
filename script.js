@@ -36,11 +36,11 @@
 
 // console.log(myFunction());
 
-function myFunction(Farukh){
-    if (Farukh.toLowerCase() === 'admin'){
+function myFunction(name){
+    if (name.toLowerCase() === 'admin'){
         return 'Welcome admin'
     } else {
-        return `Welcome ${Farukh}`
+        return `Welcome ${name}`
     }
 }
 
