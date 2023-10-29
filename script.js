@@ -49,3 +49,29 @@ function ageCheker (user, age) {
 
 console.log(ageCheker('Farukh', 22));
 console.log(ageCheker('Shabdan', 17));
+
+// Задание 5
+
+function nameMinChecker(name) {
+    if (name.length < 3) {
+        return `${name} name is too short (min 3)`
+    } else {
+        return `${name} name is accepted`
+    }
+}
+
+console.log(nameMinChecker('Farukh'))
+console.log(nameMinChecker('Li'))
+
+// Задание 6
+
+function nameMaxChecker(name) {
+    if (name.length > 5) {
+        return `${name} name is too long (max 5)`
+    } else {
+        return `${name} name is accepted`
+    }
+}
+
+console.log(nameMaxChecker('Farukh'))
+console.log(nameMaxChecker('Li'))
