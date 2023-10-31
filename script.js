@@ -75,3 +75,44 @@ function nameMaxChecker(name) {
 
 console.log(nameMaxChecker('Farukh'))
 console.log(nameMaxChecker('Li'))
+
+// Задание 7
+
+function ageTypeChecker(age) {
+    if (typeof age === 'number') {
+        return `${age} is number`
+    } else {
+        return `${age} must be a number`
+    }
+}
+
+console.log(ageTypeChecker('20'))
+console.log(ageTypeChecker(20))
+
+// Задание 8
+
+function  ageStringChecker(age) {
+    if (typeof age === 'string' && age > 23) {
+        return `${age} string and older 23`
+    } else {
+        return `${age} must be a string and older 23`
+    }
+}
+
+console.log(ageStringChecker('23'))
+console.log(ageStringChecker(14))
+
+// Задание 9
+
+let daysOfWeek = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+
+function dayChecker(dayNumber) {
+    if (dayNumber >= 1 && dayNumber <= 7) {
+        day = daysOfWeek[dayNumber - 1]
+        return day
+    } else {
+        return `max days of weeks 7`
+    }
+}
+
+console.log(dayChecker(3))
