@@ -116,3 +116,14 @@ function dayChecker(dayNumber) {
 }
 
 console.log(dayChecker(3))
+
+// Задание 10
+
+let text = " hello world "
+text = text.trim()
+text = text.replace("world", "temp").replace("hello", "world").replace("temp", "hello");
+text = text.replace(/o/g, function (match, offset) {
+    return offset === text.indexOf('o') ? match : 'а';
+});
+
+console.log(text)
